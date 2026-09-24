@@ -27,6 +27,14 @@ COMPLEXITY ANALYSIS:
 - Space Complexity: O(n)
   - Linear space required for the call stack corresponding to the height 
     of the recursion tree.
+                                fibonacci(4)
+                               /             \
+                    fibonacci(3)             fibonacci(2)
+                   /            \             /           \
+        fibonacci(2)        fibonacci(1)    fibonacci(1)  fibonacci(0)
+       /            \           [1]         [1]             [0]
+  fibonacci(1)   fibonacci(0)
+     [1]             [0]
 ====================================================================
 """
 
